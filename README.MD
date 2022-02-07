@@ -5,3 +5,5 @@ Try to recreate this wireframe with React. Be sure to create a few components (e
 - add html boilerplate
 - add script tags
 - add a main tag inside the body
+
+![](https://i.imgur.com/5mCo2tV.png)
