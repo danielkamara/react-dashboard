@@ -4,9 +4,9 @@ class App extends React.Component {
       <div class="container">
         <Dashboard />,
         <Reviews />,
-        <WebsiteVisitors />,
         <AverageRating />,
         <SentimentAnalysis />
+        <WebsiteVisitors />,
       </div>
     );
   }
@@ -15,8 +15,8 @@ class Dashboard extends React.Component {
   render() {
     return (
       <div class="dashboard">
-        <h3>Dashboard</h3>
         <li>
+          <ul>Dashboard</ul>
           <ul>Widgets</ul>
           <ul>Reviews</ul>
           <ul>Customers</ul>
@@ -63,12 +63,14 @@ class SentimentAnalysis extends React.Component {
     return (
       <div class="analysis">
         <h3>SentimentAnalysis</h3>
-        <p>960</p>
-        <p>122</p>
-        <p>321</p>
+        <li>
+          <ul>960</ul>
+          <ul>122</ul>
+          <ul>321</ul>
+        </li>
       </div>
     );
   }
 }
 
-ReactDOM.render(<App />, document.querySelector("#main"));
+ReactDOM.render(<App />, document.getElementById("main"));
