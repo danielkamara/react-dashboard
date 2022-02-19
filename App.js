@@ -1,12 +1,12 @@
 class App extends React.Component {
   render() {
     return (
-      <div class="container">
-        <Dashboard />,
-        <Reviews />,
-        <AverageRating />,
+      <div className="container">
+        <Dashboard />
+        <Reviews />
+        <AverageRating />
         <SentimentAnalysis />
-        <WebsiteVisitors />,
+        <WebsiteVisitors />
       </div>
     );
   }
@@ -14,15 +14,8 @@ class App extends React.Component {
 class Dashboard extends React.Component {
   render() {
     return (
-      <div class="dashboard">
-        <li>
-          <ul>Dashboard</ul>
-          <ul>Widgets</ul>
-          <ul>Reviews</ul>
-          <ul>Customers</ul>
-          <ul>Online Analysis</ul>
-          <ul>Settings</ul>
-        </li>
+      <div className="dashboard">
+        <h3>Dashboard</h3>
       </div>
     );
   }
@@ -30,9 +23,8 @@ class Dashboard extends React.Component {
 class Reviews extends React.Component {
   render() {
     return (
-      <div class="reviews">
+      <div className="reviews">
         <h3>Reviews</h3>
-        <p>1,281</p>
       </div>
     );
   }
@@ -40,10 +32,8 @@ class Reviews extends React.Component {
 class WebsiteVisitors extends React.Component {
   render() {
     return (
-      <div class="visitors">
+      <div className="visitors">
         <h3>Website Visitors</h3>
-        <p>821</p>
-        <div class="inner-box"></div>
       </div>
     );
   }
@@ -51,9 +41,8 @@ class WebsiteVisitors extends React.Component {
 class AverageRating extends React.Component {
   render() {
     return (
-      <div class="rating">
+      <div className="rating">
         <h3>AverageRating</h3>
-        <p>4.6</p>
       </div>
     );
   }
@@ -61,13 +50,8 @@ class AverageRating extends React.Component {
 class SentimentAnalysis extends React.Component {
   render() {
     return (
-      <div class="analysis">
+      <div className="analysis">
         <h3>SentimentAnalysis</h3>
-        <li>
-          <ul>960</ul>
-          <ul>122</ul>
-          <ul>321</ul>
-        </li>
       </div>
     );
   }

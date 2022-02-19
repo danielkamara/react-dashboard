@@ -1,26 +1,33 @@
 .container {
+  display: grid;
+  width: 100%;
+  background: rgb(229, 236, 229);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px 10px;
+  height: 500px;
+  margin: 2em 2em 2em 2em;
+  padding: 2em 2em 2em 2em;
 }
 
 .dashboard {
-  background-color: brown;
+  background: lightgray;
+  grid-row: 1/3;
 }
 
 .reviews {
-  background-color: blue;
+  background: lightgray;
 }
 
 .rating {
-  background-color: aqua;
+  background: lightgray;
 }
 
 .visitors {
-  background-color: red;
+  background: lightgray;
+  grid-column: 2/5;
 }
 
 .analysis {
-  background-color: purple;
-}
-
-.inner-box {
-  background-color: green;
+  background: lightgray;
 }
